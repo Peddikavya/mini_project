@@ -3,11 +3,11 @@ const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout
 });
-const random_number = Math.floor(Math.random() * 25) + 1;
+const random_number = Math.floor(Math.random() * 100) + 1;
 let chances = 5;
 function startGame() {
     console.log("Welcome to the Number Guessing Game!");
-    console.log("You have 5 chances to guess the number between 1 and 25.");
+    console.log("You have 5 chances to guess the number between 1 and 100.");
     function promptGuess() {
         if (chances > 0) {
             rl.question("Enter your guess: ", (input) => {
